@@ -1,0 +1,28 @@
+{
+    "our-duties": [
+        {
+            "id": 0,
+            "title": "Благоустройство квартала",
+            "description": "Благоустройство квартала насыщенно различными локациями, которые жители могут посещать свободно. В их распоряжении банный комплекс высокого уровня, спортивные студии, плей-хаб с игровыми площадками для всех возрастов",
+            "image_src": "https://s3-alpha-sig.figma.com/img/223f/7f74/9a3cda6f46c5a793349db78393f7718b?Expires=1737936000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=CRkHWpyuLobf9EnuK1b4vdrAY61KYIj58J7hEeUOsqJ5LdJdRXJOFmAvMR2ANPFjcIDg-dMCmYiUj9V-UKqDu7nTC91p-r~K1Qrg-2El5xLfeanMlLcHyto4k5XiBBBpHVrcAA91b3hNSnvJLE78T5eYZ-kCMmG1-jYBmXikJppYNIK36wVt1Q2gF8PmqXeLoox5bSG-fIJDQgbt5AAO2YraOBDi2n2qPSa-RooTdgurCRDMXVpURZRAFFEfV3DKU0eHE7pxdKFj0kJChCIcZyOfv7cU~lDA-MrbmjWIZw4fz3bYEEJRY8jeABfHCoejERH4eSwQe0aDp~2jHOjE7Q__"
+        },
+        {
+            "id": 1,
+            "title": "что-то про дома",
+            "description": "Равным финансовых порядка, кадров таким развития. Рост важную разработке в способствует намеченных направлений образом оценить задача структура позиций, идейные соответствующий активности выполнять идейны.",
+            "image_src": "https://s3-alpha-sig.figma.com/img/9675/2e90/cdf5048cb2ca9eb98e2dccd55065c5d1?Expires=1737936000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=aenX3rQJQTygl7GMOEJ5mVsKznkuvReLoatK4ggbrYSDyndKUML4aV09CIeMANZaTa37buajFkgZrZjmwImKn-tiRgkuE2UbKj4XEi227~DNGrCVk-TA2emuUg5zzB-vh-xd3k2RvPfWtVYZ-f-FGv6faOc0E-xC6T4gn1K3-e1zTu0YWKtHr6bPEPLTIbmw4Tjav2tDNuaWXlE2kTX2Mp388NPstSgTpGUOt9Ghaujk~e5vbI2by9o61SmPcF5Ec6OCvRHyRs17gvWfszqNtfKQV17HzN1kSutUNML4rC5vKhB1789rNfzg1y2l-QLFn99XAmhUbkA7O3pZxTFkbQ__"
+        },
+        {
+            "id": 2,
+            "title": "Благоустройство квартала",
+            "description": "Mattis urna pellentesque leo, aenean augue in velit libero, hac libero, quam, mauris et platea mollis sit amet platea ultricies. Augue eleifend no.",
+            "image_src": "https://s3-alpha-sig.figma.com/img/06e3/b400/adb8f5d0d5c9fce72ee70335a6d793be?Expires=1737936000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=L1BFhlZot-kw9xoC5aMkv5pSJwh6gA-2wuAFcl24QEYXIStPQutMKzWilmyxcjDtGfdHUofxUunO3Zh20ib9q4Sh7xwH6yq6KXx-wU65jeicbWhL5AqeDb2eHsyyDRJVg81zAhnhhQpfuoRpbql6V75M6zL~-d-AVeA3QGW86MveUtxXzZgJ3Pc--02W4uSpZ5UH0up0Vom~g~POMR7XtKPto-uRYiUEdQ5cypyqao72H8VYOQ9fzu4HLBmrgg6X18yYeEvtgcvpLgiEQ9TYNXyNBxMeZNarWNU6G6ey4xBrlcJPwSBwIkQZnDz7~CzdDagAWAK4kPQHPnr-CwHfqQ__"
+        },
+        {
+            "id": 3,
+            "title": "Кот на арбузе",
+            "description": "кот на арбузе",
+            "image_src": "https://external-preview.redd.it/FUvJFYEpBcIRcefiO6vXiMus1hG6qO7rbWrmlspsXvc.jpg?auto=webp&s=02de58675c841855d94859f5f49fa9705bc4ad8b"
+        }
+    ]
+}
