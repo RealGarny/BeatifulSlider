@@ -1,30 +1,58 @@
 import type { BeatifulSliderProps } from "../types/beatifulSliderTypes";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Navigation } from "swiper/modules";
+import { Navigation } from "swiper/modules";
 
 import "swiper/swiper-bundle.css";
 import "./Slider.scss";
 import { BeatifulSliderSlide } from "./BeatifulSliderSlide";
-import { useState } from "react";
+import { SliderButton } from "./SliderButton";
+import { useRef } from "react";
 
 export const BeatifulSlider: React.FC<BeatifulSliderProps> = ({
     slides = [],
+    title,
     visibleItems = 3,
 }) => {
+    const navigationPrevRef = useRef(null);
+    const navigationNextRef = useRef(null);
+
+    const handleSwiperInitialization: React.ComponentProps<typeof Swiper>["onSwiper"] = swiper => {
+        setTimeout(() => {
+            if (!swiper.params.navigation || typeof swiper.params.navigation === "boolean") return;
+            swiper.params.navigation.prevEl = navigationPrevRef.current;
+            swiper.params.navigation.nextEl = navigationNextRef.current;
+
+            // Re-init navigation
+            swiper.navigation.destroy();
+            swiper.navigation.init();
+            swiper.navigation.update();
+        });
+    };
+
     return (
-        <Swiper
-            slidesPerView={visibleItems}
-            spaceBetween={30}
-            centeredSlides={true}
-            loop={true}
-            modules={[Pagination, Navigation]}
-        >
-            {slides.map(slideData => (
-                <SwiperSlide>
-                    <BeatifulSliderSlide {...slideData} />
-                </SwiperSlide>
-            ))}
-        </Swiper>
+        <div className="mt-6 flex-col justify-center">
+            <div className="flex justify-between mx-auto px-5 mb-6 max-w-[1791px]">
+                <p className="t3 font-bold">{title}</p>
+                <div className="flex gap-4">
+                    <SliderButton ref={navigationPrevRef}>{"<"}</SliderButton>
+                    <SliderButton ref={navigationNextRef}>{">"}</SliderButton>
+                </div>
+            </div>
+            <Swiper
+                slidesPerView={visibleItems}
+                spaceBetween={30}
+                centeredSlides={true}
+                loop={true}
+                modules={[Navigation]}
+                onSwiper={handleSwiperInitialization}
+            >
+                {slides.map((slideData, index) => (
+                    <SwiperSlide>
+                        <BeatifulSliderSlide key={slideData.id} {...slideData} />
+                    </SwiperSlide>
+                ))}
+            </Swiper>
+        </div>
     );
 };
 

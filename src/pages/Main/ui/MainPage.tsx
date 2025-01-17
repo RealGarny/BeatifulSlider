@@ -15,7 +15,12 @@ const MainPage = () => {
     return (
         <div>
             {dutiesData.length && (
-                <BeatifulSlider slides={dutiesData} autoScroll autoScrollTimeout={4000} />
+                <BeatifulSlider
+                    title="Есть всё, что бы наполнить жизнь счастьем"
+                    slides={dutiesData}
+                    autoScroll
+                    autoScrollTimeout={4000}
+                />
             )}
         </div>
     );

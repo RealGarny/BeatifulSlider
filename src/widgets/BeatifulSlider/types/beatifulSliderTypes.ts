@@ -12,6 +12,7 @@ type BeatifulSliderSlideProps = {
     React.HTMLAttributes<HTMLDivElement>;
 
 interface BeatifulSliderProps {
+    title?: string;
     visibleItems?: number;
     slides?: TSlide[];
     autoScroll?: boolean;
