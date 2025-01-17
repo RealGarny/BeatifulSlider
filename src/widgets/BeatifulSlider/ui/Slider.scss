@@ -1,0 +1,16 @@
+.swiper-slide {
+    opacity: 1 !important;
+    transition: transform 0.2s ease-in-out !important;
+    &:not(.swiper-slide-active) {
+        opacity: 0.6 !important;
+        transition: transform 0.2 ease-in-out;
+    }
+}
+
+.swiper-slide-next {
+    transform: rotate(4deg) translate(0px, 0px) !important;
+}
+
+.swiper-slide-prev {
+    transform: rotate(-4deg) translate(0px, 0px) !important;
+}

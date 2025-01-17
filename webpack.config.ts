@@ -9,6 +9,7 @@ export default (env: BuildEnv) => {
         entry: path.resolve(__dirname, "src", "main.tsx"),
         build: path.resolve(__dirname, "dist"),
         src: path.resolve(__dirname, "src"),
+        static_files: path.resolve(__dirname, "public/static_files"),
     };
 
     const mode = env.mode || "development";
