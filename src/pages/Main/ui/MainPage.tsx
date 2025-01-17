@@ -1,5 +1,11 @@
+import { BeatifulSlider } from "widgets/BeatifulSlider";
+
 const MainPage = () => {
-    return <div>test2</div>;
+    return (
+        <div>
+            <BeatifulSlider />
+        </div>
+    );
 };
 
 export default MainPage;
